@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+ </head>
+  <body>
+    <!-- nav-section -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><h2>Complex UI</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+     <!-- carousal-section -->
+       <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators aria-hidden">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item" data-bs-interval="10000">
+			
+            <img src="https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_640.jpg"  class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="text-light" >First slide label</h5>
+              <p class="text-light">First Slide Description</p>
+              <button type="button" class="btn btn-primary">Call to action</button>
+			
+            </div>
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="2000">
+            <img src="https://cdn.pixabay.com/photo/2016/02/26/16/32/bulldog-1224267_640.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-md-block">
+                <h5 class="text-light" >Second slide label</h5>
+                <p class="text-light">Second Slide Description</p>
+              <button type="button" class="btn btn-primary">Call to action</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_640.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-md-block">
+                <h5 class="text-light" >Third slide label</h5>
+                <p class="text-light">Third Slide Description</p>
+              <button type="button" class="btn btn-primary">Call to action</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Custom CSS section with flex div -->
+      <div class="container mt-4">
+        <div class="flex-div ">
+            <div class="image-description">
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2015/11/17/13/13/puppy-1047521_640.jpg" width="300" height="200" alt="" />
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quidem.
+                  </p>
+                </div>
+            </div>
+            <div class="image-description">
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/05/17/51/maltese-1123016_640.jpg" width="300" height="200" alt="" />
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quidem.
+                  </p>
+                </div>
+            </div>
+            <div class="image-description">
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/29/20/54/dog-1168663_640.jpg" width="300" height="200" alt="" />
+                </div>
+                <div class="description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quidem.
+                  </p>
+                </div>             
+            </div>
+        </div>
+        <div class="main-div container-fluid">
+            <div class="img1 section1"><img class="grid-image" src="https://plus.unsplash.com/premium_photo-1666777247416-ee7a95235559?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section2"><img class="grid-image" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section3"><img class="grid-image" src="https://images.unsplash.com/photo-1624956578877-4948166c5dcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section4"><img class="grid-image" src="https://images.unsplash.com/photo-1554830072-52d78d0d4c18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section5"><img class="grid-image" src="https://images.unsplash.com/photo-1537204696486-967f1b7198c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGFwcHklMjBkb2d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section6"><img class="grid-image" src="https://images.unsplash.com/photo-1597806999047-9456837df754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhhcHB5JTIwZG9nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section7"><img class="grid-image" src="https://images.unsplash.com/photo-1559190394-df5a28aab5c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhhcHB5JTIwZG9nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"></div>
+            <div class="img1 section8"><img class="grid-image" src="https://images.rawpixel.com/image_350/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvd2s1NjcyMDE2OC1pbWFnZS1rcDZjYmt0bi5qcGc.jpg"></div>
+            <div class="img1 section9"><img class="grid-image" src="https://images.rawpixel.com/image_350/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYyMTc0NDc1LXdpa2ltZWRpYS1pbWFnZS1rb3dnZDNrMi5qcGc.jpg"></div>
+        </div>
+        <div class="d-flex titlecard flex-lg-row flex-sm-column flex-xs-column  mt-5 p-2 justify-content-between">
+            <div class="card  mt-5 mx-auto" style="width: 18rem;">
+                <img src="data:image/jpeg;base64,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"  width="300" height="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-5 mx-auto" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/id/1155030342/photo/dog-travel-by-car.jpg?s=612x612&w=0&k=20&c=dZ3JIKzExiEGUWoULEEmrst_WUcFPAnbTY9fnPuszoM="  width="300" height="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card mt-5 mx-auto" style="width: 18rem;">
+                <img src="https://media.istockphoto.com/id/1273382787/photo/portrait-of-a-nova-scotia-duck-tolling-retriever-looking-at-camera-on-a-blue-background-with.jpg?s=612x612&w=0&k=20&c=sTnZ9yaPzOzhUlFno7BkBDXOn30Wh4A_PhLTQiiH2N8="  width="300" height="200" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+      </div>
+        
+
+    <!-- footer  -->
+    <div class="container-fluid bg-light">
+      <div class="container mt-5 py-5 ">
+          <div class="row my-4">
+            <div class="col">
+              <h3>Useful Links</h3>
+              <div class="d-flex flex-column">
+                  <a href="#" >Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+              </div>
+            </div>
+            <div class="col">
+              <h3>More Links</h3>
+              <div class="d-flex flex-column">
+                  <a href="#" >Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+              </div>
+            </div>
+            <div class="col">
+                <h3>Contact Us</h3>
+                <p>Email: example@gmail.com</p>
+                <p>Phone Number: 987756788</p>
+            </div>
+          </div>
+          <div class="row d-flex align-items-center my-4">
+            <div class="col">
+            <span>&#169;</span> 2023 Complex UI. All rights reserved.
+            </div>
+            <div class="col">
+                <a class="btn btn-primary float-end" href="#navbar-section">Back to Top</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
